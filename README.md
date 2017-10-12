@@ -1,6 +1,7 @@
 # trainingGit
 
 The purpose of this training is to provide some practises for Git common operations.
+The content is mostly inspired by a french article : https://www.miximum.fr/blog/git-rebase/
 
 # Conventions
 
