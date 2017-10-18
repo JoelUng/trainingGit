@@ -16,10 +16,23 @@ Note : to rebase do not move your commits but create new commits with new id wit
 
 Here is the situation :
 ```
-TODO
+* 9d7ab16 - fix: add eol for titi (Joel Ung 11 minutes ago)
+* 18d9cbf - test: test for titi (Joel Ung 12 minutes ago)
+* f14b48e - feat: add titi (Joel Ung 12 minutes ago)
+* a624ed7 - test: add tests for toto (Joel Ung 44 minutes ago)
+* a5cb461 - feat: add toto (Joel Ung 45 minutes ago)
 ```
+--
+
+We want to fix the git history before pushing it to the remote repository.
+* First, in case of TDD design, we should have written the tests before writing the code. So we move the test commits as the oldest commits.
+* Second, we have some useless commits we want to get rid of. We will fix them.
+
+--
 
 Let's checkout the git branch :
 ```git
   git checkout -b feat-rebase-interactive
 ```
+
+And then let's do the rebase together.
